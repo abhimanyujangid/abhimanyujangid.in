@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { JSX, useState } from "react";
 // Skill icons
 import { AiOutlineApi } from "react-icons/ai";
-import { BiLogoPostgresql, BiLogoSpringBoot } from "react-icons/bi";
 import {
   FaGitAlt,
   FaReact,
@@ -20,7 +19,6 @@ import {
   SiShadcnui,
   SiTypescript,
 } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
 
 interface Skill {
   name: string;

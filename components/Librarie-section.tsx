@@ -2,11 +2,6 @@
 
 import { Badge } from "@/components/ui/badge";
 import { JSX, useState } from "react";
-// Skill icons
-import {
-  FaGitAlt,
-  FaReact,
-} from "react-icons/fa";
 import { LuImage } from "react-icons/lu";
 import {
   SiCloudinary,
