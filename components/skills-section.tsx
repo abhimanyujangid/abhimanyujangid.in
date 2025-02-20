@@ -12,11 +12,9 @@ import {
   SiAppwrite,
   SiExpress,
   SiFoodpanda,
-  SiMantine,
   SiMongodb,
   SiNextdotjs,
   SiRedux,
-  SiShadcnui,
   SiTypescript,
 } from "react-icons/si";
 
