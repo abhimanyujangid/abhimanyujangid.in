@@ -20,7 +20,7 @@ const HeroSection = () => {
             Software Developer
           </RoughNotation>{" "}
           at <br className="block md:hidden" />
-          Design Alley
+          Designing Alley
         </li>
         <li className="mb-2">Truly love working on Web</li>
       </ol>

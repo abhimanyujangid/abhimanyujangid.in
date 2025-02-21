@@ -38,7 +38,7 @@ const SocialSection = () => {
       id: 2,
       name: "LinkedIn",
       handle: "abhimanyujangid",
-      link: "https://github.com/abhimanyujangid",
+      link: "https://www.linkedin.com/in/abhimanyu-jangid-098a62216/",
       logo: linkedInLogo,
       variant: "linkedin",
       label: "Connect",
