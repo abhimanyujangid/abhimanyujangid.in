@@ -21,7 +21,7 @@ const ProjectSection = () => {
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/ui"],
       liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example/portfolio"
+      githubUrl: "https://github.com/abhimanyujangid/abhimanyujangid.in"
     },
     {
       id: 2,
