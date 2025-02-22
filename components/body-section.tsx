@@ -1,6 +1,6 @@
 import AboutSection from "@/components/about-section";
 import ExperienceSection from "@/components/experience-section";
-import GallerySection from "@/components/gallery-section";
+import ProjectSection from "@/components/project-section";
 import OpenSourceSection from "@/components/opensource-section";
 import SkillsSection from "@/components/skills-section";
 import SocialSection from "@/components/social-section";
@@ -14,10 +14,8 @@ const BodySection = () => {
       <LibrarieSection />
       <ExperienceSection />
       <OpenSourceSection />
-      <section className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-        <SocialSection />
-        <GallerySection />
-      </section>
+      <SocialSection />
+      <ProjectSection />
     </section>
   );
 };
