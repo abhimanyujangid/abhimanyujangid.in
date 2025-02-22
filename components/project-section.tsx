@@ -18,9 +18,9 @@ const ProjectSection = () => {
       id: 1,
       title: "Portfolio Website",
       description: "A modern portfolio website built with Next.js and Tailwind CSS, featuring responsive design and smooth animations.",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/ui"],
-      liveUrl: "https://example.com",
+      image: "images/portfolio.png",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/ui", "Vercel"],
+      liveUrl: "https://abhimanyujangid-in.vercel.app/",
       githubUrl: "https://github.com/abhimanyujangid/abhimanyujangid.in"
     },
     {
