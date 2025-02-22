@@ -33,7 +33,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <CardTitle className="text-xl  font-semibold font-[family-name:var(--font-departure-mono)]">{project.title}</CardTitle>
         <div className="flex flex-wrap gap-1.5">
           {project.technologies.map((tech) => (
-            <Badge key={tech} variant="secondary" className="text-xs hover:bg-primary/10 hover:font-[family-name:var(--font-departure-mono)] cursor-pointer">
+            <Badge key={tech} variant="secondary" className="text-xs  hover:outline-2 hover:bg-transparent cursor-pointer font">
               {tech}
             </Badge>
           ))}

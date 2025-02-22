@@ -26,12 +26,12 @@ const ProjectSection = () => {
     {
       id: 2,
       title: "Reels Pro",
-      description: "A comprehensive dashboard for managing online store operations, including inventory and sales analytics.",
+      description: "The project understanding ImageKit and how large applications handle media processing. Users can upload videos with progress tracking.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-      technologies: ["React", "Redux", "Node.js", "MongoDB"],
-      liveUrl: "https://dashboard-example.com",
-      githubUrl: "https://github.com/example/dashboard"
-    },
+      technologies: ["Next.js", "Next-Auth", "Mongoose", "ImageKit", "DaisyUI","Bcryptjs"],
+      liveUrl: "",
+      githubUrl: "https://github.com/abhimanyujangid/reelspro"
+    },    
     {
       id: 3,
      title: "Backendproject_MERN",
@@ -51,7 +51,7 @@ const ProjectSection = () => {
     }
   ];
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden ">
       <h2 className="text-2xl font-semibold text-left mb-4 font-[family-name:var(--font-departure-mono)]">
       Projects
       </h2>
@@ -59,9 +59,9 @@ const ProjectSection = () => {
      opts={{
       align: "start",
     }}
-      className="w-full max-w-4xl mx-auto" 
+      className="w-full max-w-4xl  mx-auto" 
       >
-      <CarouselPrevious />
+      <CarouselPrevious className="cursor-pointer"/>
       <CarouselContent>
       {projects.map((project) => (
       <CarouselItem key={project.id} className="sm:basic-1/2 lg:basis-1/2">
@@ -69,7 +69,7 @@ const ProjectSection = () => {
       </CarouselItem>
       ))}
       </CarouselContent>
-      <CarouselNext />
+      <CarouselNext className="cursor-pointer" />
       </Carousel>
     </section>
   );
