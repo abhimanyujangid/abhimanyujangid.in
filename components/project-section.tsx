@@ -26,7 +26,7 @@ const ProjectSection = () => {
     },
     {
       id: 2,
-      title: "E-commerce Dashboard",
+      title: "Reels Pro",
       description: "A comprehensive dashboard for managing online store operations, including inventory and sales analytics.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
       technologies: ["React", "Redux", "Node.js", "MongoDB"],
@@ -34,14 +34,13 @@ const ProjectSection = () => {
       githubUrl: "https://github.com/example/dashboard"
     },
     {
-      id: 3,
-      title: "thired",
-      description: "A comprehensive dashboard for managing online store operations, including inventory and sales analytics.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-      technologies: ["React", "Redux", "Node.js", "MongoDB"],
-      liveUrl: "https://dashboard-example.com",
-      githubUrl: "https://github.com/example/dashboard"
-    },
+      "id": 3,
+      "title": "Backendproject_MERN",
+      "description": "A learning project focused on authentication, file handling, JWT, Cloudinary, Multer, database design, and MongoDB aggregation pipeline.",
+      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*abBZXJw9ocX8n7XO",
+      "technologies": ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary", "Multer", "Mongoose", "Aggregation"],
+      "githubUrl": "https://github.com/abhimanyujangid/backendproject_MERN"
+    },    
     {
       id: 4,
       title: "4h",
@@ -66,7 +65,7 @@ const ProjectSection = () => {
       <CarouselPrevious />
       <CarouselContent>
       {projects.map((project) => (
-      <CarouselItem key={project.id} className="sm:basic-1/2 lg:basis-1/3">
+      <CarouselItem key={project.id} className="sm:basic-1/2 lg:basis-1/2">
         <ProjectCard project={project} />
       </CarouselItem>
       ))}
