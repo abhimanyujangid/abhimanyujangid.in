@@ -2,7 +2,6 @@
 
 import "swiper/css";
 import "swiper/css/effect-cards";
-import { EffectCards } from "swiper/modules";
 import { ProjectCard } from "./ProjectCard";
 import {
   Carousel,
@@ -34,12 +33,12 @@ const ProjectSection = () => {
       githubUrl: "https://github.com/example/dashboard"
     },
     {
-      "id": 3,
-      "title": "Backendproject_MERN",
-      "description": "A learning project focused on authentication, file handling, JWT, Cloudinary, Multer, database design, and MongoDB aggregation pipeline.",
-      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*abBZXJw9ocX8n7XO",
-      "technologies": ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary", "Multer", "Mongoose", "Aggregation"],
-      "githubUrl": "https://github.com/abhimanyujangid/backendproject_MERN"
+      id: 3,
+     title: "Backendproject_MERN",
+      description: "A learning project focused on authentication, file handling, JWT, Cloudinary, Multer, database design, and MongoDB aggregation pipeline.",
+      image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*abBZXJw9ocX8n7XO",
+      technologies: ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary", "Multer", "Mongoose", "Aggregation"],
+      githubUrl: "https://github.com/abhimanyujangid/backendproject_MERN"
     },    
     {
       id: 4,
