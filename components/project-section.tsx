@@ -29,7 +29,6 @@ const ProjectSection = () => {
       description: "The project understanding ImageKit and how large applications handle media processing. Users can upload videos with progress tracking.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
       technologies: ["Next.js", "Next-Auth", "Mongoose", "ImageKit", "DaisyUI","Bcryptjs"],
-      liveUrl: "",
       githubUrl: "https://github.com/abhimanyujangid/reelspro"
     },    
     {
@@ -37,17 +36,17 @@ const ProjectSection = () => {
      title: "Backendproject_MERN",
       description: "A learning project focused on authentication, file handling, JWT, Cloudinary, Multer, database design, and MongoDB aggregation pipeline.",
       image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*abBZXJw9ocX8n7XO",
-      technologies: ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary", "Multer", "Mongoose", "Aggregation"],
+      technologies: ["Node.js", "server", "MongoDB", "JWT", "Cloudinary", "Multer", "Mongoose", "Aggregation"],
       githubUrl: "https://github.com/abhimanyujangid/backendproject_MERN"
     },    
     {
       id: 4,
-      title: "4h",
-      description: "A comprehensive dashboard for managing online store operations, including inventory and sales analytics.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-      technologies: ["React", "Redux", "Node.js", "MongoDB"],
+      title: "Stackoverflow clone",
+      description: "A stackover flow inspired project using Next.js and Appwrite. And also using Zustand for state management and ShadcnUI for design.",
+      image: "images/StackFlow.png",
+      technologies: ["Next.js", "zustand", "AppWrite", "ShadcnUI", "MagicUI", "TailwindCSS"],
       liveUrl: "https://dashboard-example.com",
-      githubUrl: "https://github.com/example/dashboard"
+      githubUrl: "https://github.com/abhimanyujangid/qna_system"
     }
   ];
   return (
@@ -55,7 +54,8 @@ const ProjectSection = () => {
       <h2 className="text-2xl font-semibold text-left mb-4 font-[family-name:var(--font-departure-mono)]">
       Projects
       </h2>
-      <Carousel
+      <div className="">
+     <Carousel
      opts={{
       align: "start",
     }}
@@ -71,6 +71,7 @@ const ProjectSection = () => {
       </CarouselContent>
       <CarouselNext className="cursor-pointer" />
       </Carousel>
+      </div>
     </section>
   );
 };

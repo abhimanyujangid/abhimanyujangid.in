@@ -10,6 +10,7 @@ import github from "@/public/svg/github.svg";
 import discord from "@/public/svg/discord.svg";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { BorderBeam } from "./magicui/border-beam";
 
 type SocialVariant = "twitter" | "linkedin" | "instagram" | "discord";
 
@@ -61,7 +62,7 @@ const SocialSection = () => {
       </h2>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-none lg:flex lg:flex-wrap mb-8">
         {socials.map((social) => (
-          <Card key={social.id} className="rounded-2xl w-full lg:w-48">
+          <Card key={social.id} className=" relative rounded-2xl w-full lg:w-48">
             <CardHeader className="pb-0 text-sm">
               <Image
                 src={social.logo}
@@ -85,6 +86,14 @@ const SocialSection = () => {
                 </Button>
               </Link>
             </CardContent>
+            <BorderBeam
+        duration={8}
+        delay={5}
+        size={400}
+        colorFrom="#3b82f6"
+        colorTo="transparent"
+        className="absolute inset-0 z-[-1]"
+      />
           </Card>
         ))}
       </div>

@@ -1,11 +1,10 @@
 "use client";
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github,  } from "lucide-react";
 import Image from "next/image";
-
+import { ShineBorder } from "@/registry/magicui/shine-border";
 export interface Project {
   id: number;
   title: string;
@@ -18,7 +17,7 @@ export interface Project {
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="overflow-hidden h-full bg-card hover:shadow-lg transition-shadow duration-300">
+    <Card className="overflow-hidden h-full bg-card  ">
       <div className="relative h-48 w-full overflow-hidden">
         <Image
           src={project.image}
@@ -40,7 +39,7 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
-        <CardDescription className="text-sm line-clamp-3 font-[family-name:var(--font-departure-mono)]">
+        <CardDescription className="text-sm lg:line-clamp-3 font-[family-name:var(--font-departure-mono)]">
           {project.description}
         </CardDescription>
         <div className="flex gap-3">
@@ -61,7 +60,9 @@ export function ProjectCard({ project }: { project: Project }) {
             </Button>
           )}
         </div>
+        
       </CardContent>
+     
     </Card>
   );
 }

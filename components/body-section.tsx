@@ -8,7 +8,7 @@ import LibrarieSection from "./Librarie-section";
 
 const BodySection = () => {
   return (
-    <section className="px-6 py-4 lg:mt-8 xl:mt-10">
+    <section className="px-2 py-4 lg:mt-8 xl:mt-10">
       <AboutSection />
       <SkillsSection />
       <LibrarieSection />
