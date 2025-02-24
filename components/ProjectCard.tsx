@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github,  } from "lucide-react";
 import Image from "next/image";
+
 export interface Project {
   id: number;
   title: string;

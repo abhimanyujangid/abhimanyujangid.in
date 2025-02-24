@@ -45,7 +45,7 @@ const ProjectSection = () => {
       description: "A stackover flow inspired project using Next.js and Appwrite. And also using Zustand for state management and ShadcnUI for design.",
       image: "images/StackFlow.png",
       technologies: ["Next.js", "zustand", "AppWrite", "ShadcnUI", "MagicUI", "TailwindCSS"],
-      liveUrl: "https://dashboard-example.com",
+      liveUrl: "https://stackoverflow-appwrite-six.vercel.app/",
       githubUrl: "https://github.com/abhimanyujangid/qna_system"
     }
   ];
