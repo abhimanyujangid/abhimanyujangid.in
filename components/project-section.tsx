@@ -47,6 +47,15 @@ const ProjectSection = () => {
       technologies: ["Next.js", "zustand", "AppWrite", "ShadcnUI", "MagicUI", "TailwindCSS"],
       liveUrl: "https://stackoverflow-appwrite-six.vercel.app/",
       githubUrl: "https://github.com/abhimanyujangid/qna_system"
+    },
+    {
+      id: 5,
+      title: "Chat Application",
+      description: "A real-time chat application built with React, Redux, and Socket.io. Users can create rooms and chat with each other.",
+      image: "images/Chatapp.png",
+      technologies: ["React", "Redux", "Socket.io", "Axios", "MagicUI", "TailwindCSS","DaisyUI","Node.js","Express","Mongoose","JWT"],
+      liveUrl: "https://chat-application-c9si.onrender.com/",
+      githubUrl: "https://github.com/abhimanyujangid/Chat-application"
     }
   ];
   return (
