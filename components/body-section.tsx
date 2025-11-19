@@ -15,7 +15,7 @@ const BodySection = () => {
       <ExperienceSection />
       <OpenSourceSection />
       <SocialSection />
-      <ProjectSection />
+      {/* <ProjectSection /> */}
     </section>
   );
 };

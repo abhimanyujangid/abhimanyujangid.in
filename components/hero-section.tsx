@@ -3,7 +3,7 @@ import { RoughNotation } from "react-rough-notation";
 
 const HeroSection = () => {
   return (
-    <main className="flex flex-col gap-6 items-center sm:items-start pl-0 sm:px-14 md:pl-20 grow">
+    <main className="flex flex-col gap-6 items-center sm:items-start pl-0 sm:px-3 md:pl-20 lg:pl-30 grow">
       <div className="mt-16">
         <HeroImage />
       </div>

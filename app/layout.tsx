@@ -17,8 +17,9 @@ const departureMono = localFont({
 export const metadata: Metadata = {
   title: "Abhimanyu Jangid",
   description:
-    "Software Engineer with  1 years of software engineering experience in startups , currently building 3D printing software at Designing Alley.",
+    "Full-Stack Developer with experience in MERN, Next.js, microservices, and scalable backend architectures. Currently working at Designing Alley and contributing part-time as a Senior MERN Developer at True Response Softech.",
 };
+
 
 export default function RootLayout({
   children,

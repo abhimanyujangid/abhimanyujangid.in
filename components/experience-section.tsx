@@ -46,6 +46,7 @@ const ExperienceSection = () => {
       position: "Software Developer",
       startDate: "Jun 2024",
       endDate: "Present",
+      
     },
     {
       id: 3,
