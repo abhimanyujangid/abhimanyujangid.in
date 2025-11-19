@@ -18,7 +18,6 @@ import {
   SiAmazons3,
   SiExpress,
   SiMongodb,
-  SiMui,
   SiNestjs,
   SiNextdotjs,
   SiNginx,
@@ -28,7 +27,6 @@ import {
   SiRedux,
   SiSocketdotio,
   SiSwagger,
-  SiTailwindcss,
   SiTypescript,
   SiZod,
 } from "react-icons/si";

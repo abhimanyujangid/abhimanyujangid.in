@@ -1,6 +1,6 @@
 import AboutSection from "@/components/about-section";
 import ExperienceSection from "@/components/experience-section";
-import ProjectSection from "@/components/project-section";
+// import ProjectSection from "@/components/project-section";
 import OpenSourceSection from "@/components/opensource-section";
 import SkillsSection from "@/components/skills-section";
 import SocialSection from "@/components/social-section";
