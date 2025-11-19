@@ -8,6 +8,7 @@ import { useTheme } from "@/context/ThemeContext"; // Import useTheme hook
 import { differenceInMonths, differenceInYears, parse } from "date-fns";
 import designAleyLogo from "@/public/Experience/designingalley_logo.png";
 import infinitechltd from "@/public/Experience/infinitechltd.png";
+import trueResponse from "@/public/Experience/True_Response_Softech.png";
 import Image from "next/image";
 
 const calculateDuration = (startDate: string, endDate: string) => {
@@ -27,6 +28,19 @@ const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
+      company: "True Response Softech Pvt Ltd",
+      logo: trueResponse, // Replace with actual logo
+      position: "Senior MERN Developer (Part-time)",
+      startDate: "Oct 2025",
+      endDate: "Present",
+      description: [
+        "Contributing as a part-time Senior MERN Developer, leveraging prior discussions and strong industry experience.",
+        "Leading development of scalable MERN-based modules, improving backend performance and frontend usability.",
+        "Collaborating with the core engineering team to design REST APIs, optimize database queries, and enhance deployment workflows."
+      ]
+    },
+    {
+      id: 2,
       company: "Designing Alley, kota",
       logo: designAleyLogo,
       position: "Software Developer",
@@ -34,7 +48,7 @@ const ExperienceSection = () => {
       endDate: "Present",
     },
     {
-      id: 2,
+      id: 3,
       company: "Infini Application, Mauritius",
       logo: infinitechltd,
       position: "Developer and Tester Intern",
