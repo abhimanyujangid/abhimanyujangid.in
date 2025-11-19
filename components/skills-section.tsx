@@ -23,9 +23,11 @@ import {
   SiNextdotjs,
   SiNginx,
   SiPostgresql,
+  SiPostman,
   SiPrisma,
   SiRedux,
   SiSocketdotio,
+  SiSwagger,
   SiTailwindcss,
   SiTypescript,
   SiZod,
@@ -77,8 +79,10 @@ const SkillsSection = () => {
     { name: "VPS", icon: <FaServer />, color: "#0080FF" },
     { name: "AppWrite", icon: <SiAppwrite />, color: "#F02E65" },
     
-    // Version Control
+    // Version Control & Tools
     { name: "Git", icon: <FaGitAlt />, color: "#F05032" },
+    { name: "Postman", icon: <SiPostman />, color: "#FF6C37" },
+    { name: "Swagger", icon: <SiSwagger />, color: "#85EA2D" },
   ];
 
   return (
