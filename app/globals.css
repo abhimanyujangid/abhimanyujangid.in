@@ -59,6 +59,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -80,25 +81,29 @@
 
 @layer base {
   :root {
-    --background: 0 0% 7%;
-    --foreground: 0 0% 100%;
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 100%;
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 10%;
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 47%;
-    --muted-foreground: 0 0% 92%;
-    --accent: 0 0% 47%;
-    --accent-foreground: 0 0% 100%;
+    --background: 45 5% 84%;
+    /* #D7D6D3 */
+    --foreground: 0 0% 7%;
+    /* #111111 */
+    --card: 45 5% 84%;
+    --card-foreground: 0 0% 7%;
+    --popover: 45 5% 84%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 0 0% 7%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 35%;
+    /* #5A5A5A */
+    --secondary-foreground: 36 15% 94%;
+    --muted: 0 0% 35%;
+    --muted-foreground: 0 0% 35%;
+    --accent: 0 0% 35%;
+    --accent-foreground: 0 0% 7%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 47%;
-    --input: 0 0% 25%;
-    --ring: 0 0% 47%;
+    --border: 34 9% 83%;
+    /* #D8D5D1 */
+    --input: 34 9% 83%;
+    --ring: 0 0% 7%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
@@ -108,15 +113,18 @@
   }
 
   .light {
-    --background: 36 15% 94%; /* #F3F1EE */
-    --foreground: 0 0% 7%; /* #111111 */
-    --card: 36 15% 94%;
+    --background: 45 5% 84%;
+    /* #F3F1EE */
+    --foreground: 0 0% 7%;
+    /* #111111 */
+    --card: 45 5% 84%;
     --card-foreground: 0 0% 7%;
-    --popover: 36 15% 94%;
+    --popover: 45 5% 84%;
     --popover-foreground: 0 0% 7%;
     --primary: 0 0% 7%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 35%; /* #5A5A5A */
+    --secondary: 0 0% 35%;
+    /* #5A5A5A */
     --secondary-foreground: 36 15% 94%;
     --muted: 0 0% 35%;
     --muted-foreground: 0 0% 35%;
@@ -124,7 +132,8 @@
     --accent-foreground: 0 0% 7%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 34 9% 83%; /* #D8D5D1 */
+    --border: 34 9% 83%;
+    /* #D8D5D1 */
     --input: 34 9% 83%;
     --ring: 0 0% 7%;
   }
@@ -161,6 +170,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -174,6 +184,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -185,6 +196,7 @@
 
 @theme inline {
   --animate-shine: shine var(--duration) infinite linear;
+
   /*
   ---break---
 */
@@ -192,9 +204,11 @@
     0% {
       background-position: 0% 0%;
     }
+
     50% {
       background-position: 100% 100%;
     }
+
     to {
       background-position: 0% 0%;
     }

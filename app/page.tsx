@@ -8,7 +8,6 @@ const Home = () => {
 
   return (
     <div className="flex font-[family-name:var(--font-pp-fragment-glare-light)]">
-      <p>jbhhjk</p>
     </div>
   );
 };
