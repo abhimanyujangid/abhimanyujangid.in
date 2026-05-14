@@ -1,4 +1,3 @@
-import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
@@ -33,7 +32,6 @@ export default function RootLayout({
       >
         <ThemeProvider>
           {children}
-          <Toaster />
           <GoogleAnalytics gaId="G-G1BEZ46KNJ" />
         </ThemeProvider>
       </body>
