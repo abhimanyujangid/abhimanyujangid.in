@@ -19,7 +19,7 @@ export default function HeroMarquee() {
     if (!containerRef.current || !textRef.current) return;
 
     const getScrollAmount = () => {
-      let textWidth = textRef.current!.scrollWidth;
+      const textWidth = textRef.current!.scrollWidth;
       return -(textWidth - window.innerWidth);
     };
 
@@ -51,7 +51,7 @@ export default function HeroMarquee() {
           <div className="mx-2 md:mx-6 flex items-center justify-center">
             <Loader className="w-[clamp(4rem,10vw,12rem)] h-[clamp(4rem,10vw,12rem)] animate-[spin_10s_linear_infinite]" strokeWidth={1.5} />
           </div>
-          <span>I'M ABHIMANYU —</span>
+          <span>I&apos;M ABHIMANYU —</span>
           <span className="ml-8 md:ml-16">FRONTEND DEVELOPER,</span>
           <span className="ml-8 md:ml-16">
             UI/UX DESIGNER,
@@ -82,7 +82,7 @@ export default function HeroMarquee() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="max-w-md font-medium text-md"
           >
-            Hi, I'm Abhimanyu, a frontend developer crafting modern digital experiences that blend creativity with performance.
+            Hi, I&apos;m Abhimanyu, a frontend developer crafting modern digital experiences that blend creativity with performance.
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

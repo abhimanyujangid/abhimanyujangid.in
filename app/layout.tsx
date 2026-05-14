@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SmoothScrolling from "@/components/SmoothScrolling";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const ppFragmentGlareLight = localFont({
   src: "./fonts/pp-fragment-glare-light.ttf",
   variable: "--font-pp-fragment-glare-light",
@@ -36,6 +37,7 @@ export default function RootLayout({
             <Navbar />
             {children}
             <GoogleAnalytics gaId="G-G1BEZ46KNJ" />
+            <SpeedInsights />
           </SmoothScrolling>
         </ThemeProvider>
       </body>
