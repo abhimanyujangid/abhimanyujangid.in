@@ -8,15 +8,14 @@ import { Loader } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger, useGSAP);
-}
+
 
 export default function HeroMarquee() {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
     if (!containerRef.current || !textRef.current) return;
 
     const getScrollAmount = () => {
@@ -64,7 +63,7 @@ export default function HeroMarquee() {
           {/* Portrait Image Placeholder */}
           <div className="ml-8 md:ml-16 w-[clamp(5rem,13vw,14rem)] h-[clamp(4rem,11vw,12rem)] bg-[#111111] rounded-xl overflow-hidden shrink-0 transform -rotate-2 flex items-center justify-center">
             <span className="text-white text-xs tracking-normal font-normal">
-              <Image src="images/Chatapp.png" alt="Hero" width={200} height={200} className="-rotate-2 w-full h-full object-cover" />
+              <Image src="images/profile.png" alt="Hero" width={200} height={200} className="-rotate-2 w-full h-full object-cover" />
             </span>
           </div>
           <span className="ml-8 md:ml-16 pr-[20vw]">
@@ -74,7 +73,7 @@ export default function HeroMarquee() {
       </div>
 
       {/* Bottom Info Section (Now inside the pinned screen) */}
-      <div className="w-full flex flex-col px-6 py-6">
+      <div className="w-full flex flex-col px-6 md:px-12 lg:px-30 py-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 leading-[1.5] text-primary">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
