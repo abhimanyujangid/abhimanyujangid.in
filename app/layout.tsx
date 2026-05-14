@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import SmoothScrolling from "@/components/SmoothScrolling";
 const ppFragmentGlareLight = localFont({
   src: "./fonts/pp-fragment-glare-light.ttf",
   variable: "--font-pp-fragment-glare-light",
@@ -31,9 +32,11 @@ export default function RootLayout({
         className={`${ppFragmentGlareLight.variable} ${departureMono.variable} antialiased`}
       >
         <ThemeProvider>
-          <Navbar />
-          {children}
-          <GoogleAnalytics gaId="G-G1BEZ46KNJ" />
+          <SmoothScrolling>
+            <Navbar />
+            {children}
+            <GoogleAnalytics gaId="G-G1BEZ46KNJ" />
+          </SmoothScrolling>
         </ThemeProvider>
       </body>
     </html>

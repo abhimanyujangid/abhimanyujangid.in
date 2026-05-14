@@ -2,13 +2,15 @@
 
 import { useTheme } from "@/context/ThemeContext";
 
+import Hero from "@/components/Hero";
+
 const Home = () => {
   const { theme } = useTheme();
 
-
   return (
-    <div className="flex font-[family-name:var(--font-pp-fragment-glare-light)]">
-    </div>
+    <main className="flex flex-col font-sans">
+      <Hero />
+    </main>
   );
 };
 

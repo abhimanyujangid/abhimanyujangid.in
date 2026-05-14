@@ -17,13 +17,13 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50">
+    <nav className="fixed top-0 left-0 w-full z-50">
       {/* Main Navbar */}
       <div className="relative z-20 px-6 py-6 md:px-12 flex items-center justify-between w-full bg-[#D7D6D3] md:bg-transparent">
         {/* Left Logo */}
         <div className="flex items-center w-1/2">
           <Link href="/" aria-label="Home">
-            <Loader className="w-8 h-8 text-primary" strokeWidth={2} />
+            <Loader className="w-8 h-8 text-primary animate-[spin_3s_linear_infinite]" strokeWidth={2} />
           </Link>
         </div>
 
