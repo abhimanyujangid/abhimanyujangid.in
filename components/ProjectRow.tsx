@@ -8,17 +8,14 @@ interface ProjectRowProps {
   name: string;
   year: string;
   image: string;
+  link?: string;
 }
 
-export default function ProjectRow({ id, name, year, image }: ProjectRowProps) {
+export default function ProjectRow({ id, name, year, image, link }: ProjectRowProps) {
   const [isHovered, setIsHovered] = useState(false);
 
-  return (
-    <div
-      className="relative flex items-center justify-between border-b border-primary/20 py-12 group cursor-pointer"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+  const innerContent = (
+    <>
       {/* Text Layer */}
       <div className="flex items-center gap-6 md:gap-12 relative z-10">
         <span className="text-sm md:text-lg font-medium text-primary/40 group-hover:text-primary transition-colors">
@@ -50,6 +47,33 @@ export default function ProjectRow({ id, name, year, image }: ProjectRowProps) {
       >
         <img src={image} alt={name} className="w-full h-full object-cover" />
       </motion.div>
+    </>
+  );
+
+  const containerClasses = "relative flex items-center justify-between border-b border-primary/20 py-12 group cursor-pointer w-full block";
+
+  if (link) {
+    return (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={containerClasses}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {innerContent}
+      </a>
+    );
+  }
+
+  return (
+    <div
+      className={containerClasses}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {innerContent}
     </div>
   );
 }

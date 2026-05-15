@@ -60,7 +60,7 @@ export default function Navbar() {
 
           {/* Right CTA & Mobile Toggle */}
           <div className="flex items-center space-x-4">
-            <AnimatedButton href="/contact">BOOK A CALL</AnimatedButton>
+            <AnimatedButton href="mailto:[abhimanyujangid79@gmail.com]">Mail Me</AnimatedButton>
 
             <button
               className="md:hidden text-primary focus:outline-none"
