@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { motion, useMotionValue, useSpring, useMotionTemplate } from "framer-motion";
+import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 
 export default function Footer() {
   const [isHovered, setIsHovered] = useState(false);
@@ -43,6 +44,12 @@ export default function Footer() {
       return () => container.removeEventListener("mousemove", handleMouseMove);
     }
   }, [mouseX, mouseY]);
+
+  const smoothScroll = useSmoothScroll();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    smoothScroll(e, path);
+  };
 
   const maskImage = useMotionTemplate`radial-gradient(circle ${radius}px at ${cursorX}px ${cursorY}px, black 100%, transparent 100%)`;
 
@@ -130,10 +137,10 @@ export default function Footer() {
           {/* Navigation */}
           <div className="flex flex-col space-y-4">
             <h3 className="text-primary/50 tracking-wide mb-2 uppercase">—— Navigation</h3>
-            <Link href="/" className="text-primary hover:text-primary/60 transition-colors">HOME</Link>
-            <Link href="/about" className="text-primary hover:text-primary/60 transition-colors">ABOUT</Link>
-            <Link href="/work" className="text-primary hover:text-primary/60 transition-colors">WORK</Link>
-            <Link href="/contact" className="text-primary hover:text-primary/60 transition-colors">CONTACT</Link>
+            <Link href="#top" onClick={(e) => handleNavClick(e, "#top")} className="text-primary hover:text-primary/60 transition-colors">HOME</Link>
+            <Link href="#about" onClick={(e) => handleNavClick(e, "#about")} className="text-primary hover:text-primary/60 transition-colors">ABOUT</Link>
+            <Link href="#work" onClick={(e) => handleNavClick(e, "#work")} className="text-primary hover:text-primary/60 transition-colors">WORK</Link>
+            <Link href="#contact" onClick={(e) => handleNavClick(e, "#contact")} className="text-primary hover:text-primary/60 transition-colors">CONTACT</Link>
           </div>
 
           {/* Socials */}
