@@ -34,6 +34,7 @@ export default function WorksSection() {
 
   return (
     <section
+      id="work"
       ref={containerRef}
       className="relative w-full bg-background min-h-screen"
     >
@@ -57,8 +58,8 @@ export default function WorksSection() {
         <div className="flex flex-col gap-0 w-full max-w-5xl mx-auto">
           {[
             { id: "01", name: "E-Commerce Experience", year: "2025", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop" },
-            { id: "02", name: "Airplane 3D Render Scroller", year: "2025", image: "images/airplane.png", link: "https://airplane-3d-render-scroller-effect.vercel.app" },
-            { id: "03", name: "Creative Agency Portfolio", year: "2022", image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2000&auto=format&fit=crop" },
+            { id: "02", name: "Airplane 3D Render Scroller", year: "2026", image: "images/airplane.png", link: "https://airplane-3d-render-scroller-effect.vercel.app" },
+            { id: "03", name: "Agriculture Website", year: "2026", image: "images/Indocrown.png ", link: "https://dhannalal-surendra-kumar-krishi-yan.vercel.app/en" },
             { id: "04", name: "Web3 Interactive Platform", year: "2021", image: "https://images.unsplash.com/photo-1639762681485-074b7f4ec651?q=80&w=2832&auto=format&fit=crop" },
           ].map((project, idx) => (
             <ProjectRow key={idx} {...project} />

@@ -31,7 +31,7 @@ export default function AboutSection() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="relative w-full h-[200vh] bg-background">
+    <section id="about" ref={containerRef} className="relative w-full h-[200vh] bg-background">
       <div className="sticky top-0 h-screen w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-20 md:py-0 gap-12 overflow-hidden">
 
         {/* Left Side: Text Reveal */}

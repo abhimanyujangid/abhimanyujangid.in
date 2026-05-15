@@ -8,13 +8,50 @@ import AnimatedButton from "./AnimatedButton";
 
 const navLinks = [
   { name: "HOME", path: "/" },
-  { name: "ABOUT", path: "/about" },
-  { name: "WORK", path: "/work" },
+  { name: "ABOUT", path: "#about" },
+  { name: "WORK", path: "#work" },
 ];
 
 export default function Navbar() {
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (path.startsWith("#")) {
+      e.preventDefault();
+      const targetId = path.substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const startPosition = window.scrollY;
+        const distance = targetPosition - startPosition;
+        const duration = 1500; // 1.5 seconds for a nice slow cinematic scroll
+        let start: number | null = null;
+
+        const animation = (currentTime: number) => {
+          if (start === null) start = currentTime;
+          const timeElapsed = currentTime - start;
+          const progress = Math.min(timeElapsed / duration, 1);
+          
+          // Easing function (ease-in-out cubic) for a buttery smooth stop
+          const ease = progress < 0.5 
+            ? 4 * progress * progress * progress 
+            : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+          window.scrollTo(0, startPosition + distance * ease);
+
+          if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+          }
+        };
+
+        requestAnimationFrame(animation);
+      }
+      setIsMobileMenuOpen(false);
+    } else {
+      setIsMobileMenuOpen(false);
+    }
+  };
 
   return (
     <nav className="absolute top-0 left-0 w-full z-50">
@@ -35,6 +72,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.path}
+                onClick={(e) => handleNavClick(e, link.path)}
                 onMouseEnter={() => setHoveredLink(link.name)}
                 onMouseLeave={() => setHoveredLink(null)}
                 className="relative flex items-center text-[0.95rem] font-semibold uppercase tracking-tight text-primary h-8"
@@ -88,7 +126,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.path}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, link.path)}
                   className="text-xs font-bold uppercase tracking-wide text-primary"
                 >
                   {link.name}
