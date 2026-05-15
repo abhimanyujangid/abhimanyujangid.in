@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { Loader } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
+import GlassTextReveal from "./GlassTextReveal";
 
 
 export default function HeroMarquee() {
@@ -104,11 +104,10 @@ export default function HeroMarquee() {
           className="mt-20 flex justify-between items-end text-sm font-semibold uppercase tracking-wide text-primary"
         >
           <div className="flex items-center space-x-2">
-            <Loader className="w-5 h-5 animate-[spin_3s_linear_infinite]" strokeWidth={1.5} />
-            <span>CERTIFIED PARTNER</span>
           </div>
-          <div>
-            Abhimanyu Jangid
+          <div className="flex items-center space-x-2 gap-2">
+            <Loader className="w-5 h-5 animate-[spin_3s_linear_infinite]" strokeWidth={1.5} />
+            <span>Abhimanyu Jangid</span>
           </div>
         </motion.div>
       </div>
