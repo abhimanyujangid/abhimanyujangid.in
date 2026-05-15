@@ -1,5 +1,6 @@
 "use client";
 import Hero from "@/components/Hero";
+import CursorSpotlightText from "@/components/CursorSpotlightText";
 
 const Home = () => {
   return (
