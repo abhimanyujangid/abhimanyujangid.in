@@ -34,7 +34,6 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <SmoothScrolling>
-            <Navbar />
             {children}
             <GoogleAnalytics gaId="G-G1BEZ46KNJ" />
             <SpeedInsights />

@@ -1,11 +1,12 @@
 "use client";
 import Hero from "@/components/Hero";
-import CursorSpotlightText from "@/components/CursorSpotlightText";
+import WorksSection from "@/components/WorksSection";
 
 const Home = () => {
   return (
     <main className="flex flex-col font-sans">
       <Hero />
+      <WorksSection />
     </main>
   );
 };

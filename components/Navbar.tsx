@@ -17,7 +17,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
+    <nav className="absolute top-0 left-0 w-full z-50">
       {/* Main Navbar */}
       <div className="relative z-20 px-6 py-6 md:px-12 flex items-center justify-between w-full bg-[#D7D6D3] md:bg-transparent">
         {/* Left Logo */}

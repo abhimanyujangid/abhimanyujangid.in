@@ -8,6 +8,7 @@ import { Loader } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import GlassTextReveal from "./GlassTextReveal";
+import Navbar from "./Navbar";
 
 
 export default function HeroMarquee() {
@@ -40,7 +41,8 @@ export default function HeroMarquee() {
   }, { scope: containerRef });
 
   return (
-    <div ref={containerRef} className="h-screen w-full overflow-hidden flex flex-col justify-between pt-32 pb-8 bg-[#D7D6D3]">
+    <div ref={containerRef} className="h-screen w-full overflow-hidden flex flex-col justify-between pt-32 pb-8 bg-[#D7D6D3] relative">
+      <Navbar />
       {/* Spacer for Navbar */}
       <div className="flex-1 flex flex-col justify-center">
         <div
