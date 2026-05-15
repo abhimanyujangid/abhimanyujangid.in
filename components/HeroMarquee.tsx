@@ -54,7 +54,7 @@ export default function HeroMarquee() {
             <Loader className="w-[clamp(4rem,10vw,12rem)] h-[clamp(4rem,10vw,12rem)] animate-[spin_10s_linear_infinite]" strokeWidth={1.5} />
           </div>
           <span>I&apos;M ABHIMANYU —</span>
-          <span className="ml-8 md:ml-16">FRONTEND DEVELOPER,</span>
+          <span className="ml-8 md:ml-16">FULL STACK DEVELOPER,</span>
           <span className="ml-8 md:ml-16">
             UI/UX DESIGNER,
           </span>
