@@ -21,7 +21,7 @@ export const projects: Project[] = [
         logo: "/ekkon/logo.png",
         image: "/ekkon/hero1.png",
         overview: "Ekkon is an AI voice generation platform for turning text into realistic, natural-sounding speech. It is built for creators and teams who need quick voice drafts for stories, podcasts, marketing copy, notifications, and product experiences.",
-        techStack: ["Next.js", "Shadcn", "TypeScript", "TRPC", "PostgreSQL", "Cloudflare R2", "wavesurfer.js"],
+        techStack: ["Next.js", "Shadcn", "TypeScript", "TRPC", "PostgreSQL", "Cloudflare R2", "Wavesurfer.js", "Chatterbox-tts"],
         gallery: [
             "/ekkon/hero1.png",
             "/ekkon/hero2.png",
