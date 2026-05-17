@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface ProjectRowProps {
   id: string;
@@ -41,11 +42,11 @@ export default function ProjectRow({ id, name, year, image, link }: ProjectRowPr
           scale: isHovered ? 1 : 0.75,
           rotate: isHovered ? 10 : 0
         }}
-        transition={{ type: "spring", stiffness: 150, damping: 15, mass: 1.2 }}
+        transition={{ type: "spring", stiffness: 100, damping: 15, mass: 1.2 }}
         className="absolute -right-[10%] top-1/2 w-48 h-32 md:w-80 md:h-56 rounded-xl overflow-hidden pointer-events-none z-[999] shadow-2xl origin-center"
         style={{ y: "-50%" }} // Fixes centering with Framer Motion transforms
       >
-        <img src={image} alt={name} className="w-full h-full object-cover" />
+        <Image src={image} alt={name} width={400} height={300} className="w-full h-full " />
       </motion.div>
     </>
   );
