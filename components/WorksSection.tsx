@@ -4,8 +4,8 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import ProjectRow from "./ProjectRow";
 import { projects } from "@/data/projects";
+import ProjectRow from "./project/ProjectRow";
 
 export default function WorksSection() {
   const containerRef = useRef<HTMLDivElement>(null);

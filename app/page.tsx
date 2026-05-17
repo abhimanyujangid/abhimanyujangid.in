@@ -1,9 +1,9 @@
 "use client";
-import Hero from "@/components/Hero";
-import WorksSection from "@/components/WorksSection";
-import AboutSection from "@/components/AboutSection";
-import ExperienceSection from "@/components/ExperienceSection";
+import Hero from "@/components/sections/Hero";
+import AboutSection from "@/components/sections/AboutSection";
+import ExperienceSection from "@/components/sections/ExperienceSection";
 import Footer from "@/components/Footer";
+import WorksSection from "@/components/WorksSection";
 
 const Home = () => {
   return (

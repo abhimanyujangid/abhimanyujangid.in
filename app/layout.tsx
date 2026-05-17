@@ -3,9 +3,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import SmoothScrolling from "@/components/SmoothScrolling";
+
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import SmoothScrolling from "@/components/layout/SmoothScrolling";
 const ppFragmentGlareLight = localFont({
   src: "./fonts/pp-fragment-glare-light.ttf",
   variable: "--font-pp-fragment-glare-light",

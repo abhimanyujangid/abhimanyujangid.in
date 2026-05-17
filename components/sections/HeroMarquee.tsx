@@ -7,8 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { Loader } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import GlassTextReveal from "./GlassTextReveal";
-import Navbar from "./Navbar";
+import Navbar from "../layout/Navbar";
 
 
 export default function HeroMarquee() {

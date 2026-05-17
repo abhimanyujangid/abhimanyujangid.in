@@ -1,9 +1,8 @@
-import React from "react";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
 import Footer from "@/components/Footer";
-import ProjectHero from "@/components/ProjectHero";
-import ProjectDetails from "@/components/ProjectDetails";
+import ProjectHero from "@/components/project/ProjectHero";
+import ProjectDetails from "@/components/project/ProjectDetails";
 
 interface ProjectPageProps {
   params: {
