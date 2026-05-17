@@ -20,14 +20,15 @@ export const projects: Project[] = [
         year: "2026",
         logo: "/ekkon/logo.png",
         image: "/ekkon/hero1.png",
-        overview: "A seamless platform designed to enhance digital interactions. Ekkon brings a new level of minimalism and performance to the table, ensuring that user experience remains intuitive and engaging.",
-        techStack: ["Next.js", "Tailwind CSS", "Framer Motion", "GSAP"],
+        overview: "Ekkon is an AI voice generation platform for turning text into realistic, natural-sounding speech. It is built for creators and teams who need quick voice drafts for stories, podcasts, marketing copy, notifications, and product experiences.",
+        techStack: ["Next.js", "Shadcn", "TypeScript", "TRPC", "PostgreSQL", "Cloudflare R2", "wavesurfer.js"],
         gallery: [
             "/ekkon/hero1.png",
             "/ekkon/hero2.png",
             "/ekkon/hero3.png",
         ],
         deploy: "https://ekkon-kappa.vercel.app/",
+        github: "https://github.com/abhimanyujangid/ekkon",
     },
     {
         id: "02",

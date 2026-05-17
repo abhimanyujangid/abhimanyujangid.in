@@ -49,7 +49,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 src={imgSrc}
                 alt={`${project.name} preview ${index + 1}`}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                className=" group-hover:scale-101 transition-transform duration-700 ease-in-out"
               />
             </div>
           ))}

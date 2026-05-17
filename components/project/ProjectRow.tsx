@@ -48,7 +48,7 @@ export default function ProjectRow({ id, name, slug, year, image, link }: Projec
         className="absolute -right-[10%] top-1/2 w-48 h-32 md:w-80 md:h-56 rounded-xl overflow-hidden pointer-events-none z-[999] shadow-2xl origin-center"
         style={{ y: "-50%" }} // Fixes centering with Framer Motion transforms
       >
-        <Image src={image} alt={name} width={400} height={300} className="w-full h-full " />
+        <Image src={image} alt={name} width={400} height={300} className="w-full h-full  " />
       </motion.div>
     </>
   );
