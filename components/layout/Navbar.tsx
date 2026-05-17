@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Loader, Menu, X } from "lucide-react";
-import AnimatedButton from "./AnimatedButton";
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
+import AnimatedButton from "../ui/AnimatedButton";
 
 const navLinks = [
   { name: "HOME", path: "/" },

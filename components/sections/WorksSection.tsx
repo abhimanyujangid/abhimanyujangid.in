@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { projects } from "@/data/projects";
-import ProjectRow from "./project/ProjectRow";
+import ProjectRow from "../project/ProjectRow";
 
 export default function WorksSection() {
   const containerRef = useRef<HTMLDivElement>(null);
