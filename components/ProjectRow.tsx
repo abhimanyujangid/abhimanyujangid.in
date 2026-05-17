@@ -3,16 +3,18 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectRowProps {
   id: string;
   name: string;
+  slug: string;
   year: string;
   image: string;
   link?: string;
 }
 
-export default function ProjectRow({ id, name, year, image, link }: ProjectRowProps) {
+export default function ProjectRow({ id, name, slug, year, image, link }: ProjectRowProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   const innerContent = (
@@ -53,28 +55,14 @@ export default function ProjectRow({ id, name, year, image, link }: ProjectRowPr
 
   const containerClasses = "relative flex items-center justify-between border-b border-primary/20 py-12 group cursor-pointer w-full block";
 
-  if (link) {
-    return (
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={containerClasses}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        {innerContent}
-      </a>
-    );
-  }
-
   return (
-    <div
+    <Link
+      href={`/project/${slug}`}
       className={containerClasses}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {innerContent}
-    </div>
+    </Link>
   );
 }

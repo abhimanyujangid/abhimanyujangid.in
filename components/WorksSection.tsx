@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import ProjectRow from "./ProjectRow";
+import { projects } from "@/data/projects";
 
 export default function WorksSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -56,12 +57,7 @@ export default function WorksSection() {
         <div className="h-[70vh] w-full pointer-events-none" />
 
         <div className="flex flex-col gap-0 w-full max-w-5xl mx-auto">
-          {[
-            { id: "01", name: "Ekkon", year: "2026", image: "images/ekkon.png", link: "https://ekkon-kappa.vercel.app/" },
-            { id: "02", name: "Airplane 3D Render Scroller", year: "2026", image: "images/airplane.png", link: "https://airplane-3d-render-scroller-effect.vercel.app" },
-            { id: "03", name: "Agriculture Website", year: "2026", image: "images/Indocrown.png", link: "https://dhannalal-surendra-kumar-krishi-yan.vercel.app/en" },
-            { id: "04", name: "Web3 Interactive Platform", year: "2021", image: "https://images.unsplash.com/photo-1639762681485-074b7f4ec651?q=80&w=2832&auto=format&fit=crop" },
-          ].map((project, idx) => (
+          {projects.map((project, idx) => (
             <ProjectRow key={idx} {...project} />
           ))}
         </div>
