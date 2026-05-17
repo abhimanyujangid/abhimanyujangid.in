@@ -37,7 +37,7 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
             </div>
           )}
         </div>
-        <h1 className="text-5xl md:text-8xl lg:text-[10vw] font-medium tracking-tight text-primary leading-none text-center">
+        <h1 className="text-[clamp(5rem,12vw,14rem)] font-medium leading-[0.9] tracking-[-0.06em] uppercase text-primary text-center">
           {project.name}
         </h1>
       </div>
