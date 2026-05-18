@@ -46,7 +46,7 @@ export default function HeroMarquee() {
       <div className="flex-1 flex flex-col justify-center">
         <div
           ref={textRef}
-          className="flex items-center whitespace-nowrap uppercase tracking-[-0.06em] leading-[0.9] font-medium text-[clamp(6rem,15vw,18rem)] text-primary w-max px-6 md:px-12"
+          className="flex items-center whitespace-nowrap uppercase tracking-[-0.06em] leading-[0.9] font-medium text-[clamp(6rem,15vw,11rem)] text-primary w-max px-6 md:px-12"
         >
           <span>HI </span>
           <div className="mx-2 md:mx-6 flex items-center justify-center">
@@ -55,12 +55,8 @@ export default function HeroMarquee() {
           <span>I&apos;M ABHIMANYU —</span>
           <span className="ml-8 md:ml-16">FULL STACK DEVELOPER,</span>
           <span className="ml-8 md:ml-16">
-            UI/UX DESIGNER,
-          </span>
-          <span className="ml-8 md:ml-16">
-            CREATIVE Coder,
-          </span>
 
+          </span>
           {/* Portrait Image Placeholder */}
           <div className="ml-8 md:ml-16 w-[clamp(5rem,13vw,14rem)] h-[clamp(4rem,11vw,12rem)] bg-[#111111] rounded-xl overflow-hidden shrink-0 transform -rotate-2 flex items-center justify-center">
             <span className="text-white text-xs tracking-normal font-normal">
@@ -68,7 +64,7 @@ export default function HeroMarquee() {
             </span>
           </div>
           <span className="ml-8 md:ml-16 pr-[20vw]">
-            BUILDING MODERN WEB EXPERIENCES
+            AI AUTOMATION ENGINEER
           </span>
         </div>
       </div>
